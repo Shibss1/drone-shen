@@ -16,7 +16,13 @@ This repository includes files that execute said attacks:
  3) ```deauth.py``` - Simple de-authentication script
 
 ## Additional sub topics
-In this section, the attack is further explained. Future enhancements to the script and research as a whole are brought up here as well.
+### Using attack.py
+1) Use ```sniff.py``` to sniff the network traffic. Manually stop the script when you have successfully captured the 4-way handshake of a successful authentication to the drone's network.
+2) In ```attack.py```, change the 'file' variable to match the path of the file obtained from ```sniff.py``` (in this case, demo.pcapng).
+3) In the same file, change the 'wlist' variable to match the path of your own dictionary.
+
+### Explanation
+In this sub-section, the attack is further explained. Future enhancements to the script and research as a whole are brought up here as well.
 
 1) ```sniff.py``` <br>
 This script utilises hcxdumptool to sniff network traffic. The purpose of this script is to acquire the 4-way handshake of, in this context, successful authentications into the targeted drone's network. It will then output a pcapng file, which is utilised in ```attack.py```
