@@ -18,25 +18,20 @@ This repository includes files that execute said attacks:
 ## Additional sub topics
 In this section, the attack is further explained. Future enhancements to the script and research as a whole are brought up here as well.
 
-1) ```sniff.py```
-
+1) ```sniff.py``` <br>
 This script utilises hcxdumptool to sniff network traffic. The purpose of this script is to acquire the 4-way handshake of, in this context, successful authentications into the targeted drone's network. It will then output a pcapng file, which is utilised in ```attack.py```
 
-2) ```sampleDict.txt```
-
+2) ```sampleDict.txt``` <br>
 A sample dictionary passed through hashcat to attempt to crack the Wi-Fi password.
 
-3) ```capHash.22000 / sampleCap.pcapng``` #I think can remove this file, serves no purpose for people who download the tool directly
-
+3) ```capHash.22000 / sampleCap.pcapng``` #I think can remove this file, serves no purpose for people who download the tool directly <br>
 The pcapng file captured from ```sniff.py``` and the converted .22000 from hcxdumptool.
 
-4) ```attack.py```
-
+4) ```attack.py``` <br>
 This script utilses the pcapng file obtained from ```sniff.py``` to reformat the 4-way handshake into the .22000 file format (using hcxpcapngtool) to facilitate the cracking of the password through hashcat.
 After gaining access into the drone, the script stops the physical motors of the drone, causing it to flop to the surface, and then changes the drone's Wi-Fi name and password through all through its own SDK.
 
-5) ```deauth.py```
-
+5) ```deauth.py``` <br>
 A script that utilises aireplay-ng to deauthenticate the drone.
 
 ### Future Improvements
@@ -47,7 +42,7 @@ A script that utilises aireplay-ng to deauthenticate the drone.
 
 
 ## References/Links
-https://www.aircrack-ng.org/
-https://www.aircrack-ng.org/doku.php?id=aireplay-ng
+https://www.aircrack-ng.org/ <br>
+https://www.aircrack-ng.org/doku.php?id=aireplay-ng <br>
 https://hashcat.net/wiki/doku.php?id=cracking_wpawpa2
 
