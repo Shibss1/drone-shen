@@ -50,6 +50,6 @@ A script that utilises aireplay-ng to deauthenticate the drone.
 ## References/Links
 https://www.aircrack-ng.org/ <br>
 https://www.aircrack-ng.org/doku.php?id=aireplay-ng <br>
-https://hashcat.net/wiki/doku.php?id=cracking_wpawpa2
-https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide.pdf
+https://hashcat.net/wiki/doku.php?id=cracking_wpawpa2 <br>
+https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide.pdf <br>
 https://www.ryzerobotics.com/tello
