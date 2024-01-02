@@ -25,7 +25,8 @@ The 2nd and 3rd is utilising the TELLO SDK to immediately stop the drone's motor
 
 ## Future Improvements
 ~~1) Compile the different attacks into one file, making it a interactive tool.~~ <br>
-2) We have yet to try a UDP packet replay attack. The unencrypted UDP traffic sends information about the drone (temp, battery etc.). This can be taken advantage of by sending false packets. 
+2) We have yet to try a UDP packet replay attack. The unencrypted UDP traffic sends information about the drone (temp, battery etc.). This can be taken advantage of by sending false packets.
+3) nmcli connection is iffy, maybe try find an alternative
 
 ## References/Links
 https://www.aircrack-ng.org/ <br>
